@@ -1,0 +1,16 @@
+* {
+    font-family:cursive;
+    font-weight: bold;
+}
+
+body {
+    background-image: linear-gradient(rgb(232,158,247),rgb(160,209,212),rgb(219,95,86));
+    color:royalblue;
+    margin-top: 50px;
+}
+
+.mydiv {
+    display:cover;
+    width: 50%;
+    margin:auto ;
+}

@@ -1,0 +1,36 @@
+<html>
+<head> 
+<title> My Tasks To Be done </title>
+ <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+ <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="mydiv" align="center">
+<h2>Today's Tasks </h2>
+
+<form action ="/add" method="POST">
+
+<input type="text" name="newtask" placeholder="Enter Tody's Tasks" style="background-color:lemonchiffon">
+<button style="background-color:lightcoral"> Add Task </button>
+
+
+<h2> Task's To Be Done </h2>
+
+<% for( var i = 0; i < task.length; i++){ %>
+    <li><input type="checkbox" name="check" value="<%= task[i] %>" /> <%= task[i] %> </li>
+<% } %>
+<br>
+<button formaction="/remove" type="submit" id="top" style="background-color:lightcoral"> Remove </button>
+</form>
+
+<h2> Completed tasks </h2>
+
+ <% for(var i = 0; i < complete.length; i++){ %>
+    <li><input type="checkbox" checked ><%= complete[i] %> </li>
+<% } %>
+
+</div>
+
+</body>
+</html>
